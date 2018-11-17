@@ -1,0 +1,3 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Cuestionario}{1}
+\contentsline {subsection}{\numberline {1.1}\IeC {\textquestiondown }Qu\IeC {\'e} sucede al ejecutar los siguientes comandos?}{1}
