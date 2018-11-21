@@ -120,7 +120,48 @@ Apaza Mamani Edward\hfill	(2018060915) \\
 - Es un modo especial de trabajo en el que la base de datos está abierta, pero solo se permite el acceso a usuarios con permiso RESTRICTED (lo poseen los administradores) para hacer tareas especiales de administración.\\
 \end{itemize} 
 
+\textbf{STARTUP RECOVER} \ 
+\begin{itemize}
+- Tiene el mismo efecto que emitir el comando RECOVER DATABASE e iniciar una instancia.\\
+\end{itemize} 
+
+\textbf{SHUTDOWN NORMAL} \ 
+\begin{itemize}
+- Modo en el que no se admiten más conexiones a la base de datos, pero las actuales se mantienen. Cuando se cierre la última sesión, la base de datos pasará a estar cerrada (SHUTDOWN), pero, hasta entonces, seguirá abierta. Al cerrar se fuerza un checkpoint y se graban todos los datos del búfer, además de cerrarse los archivos.\\
+\end{itemize}
+
+
+\textbf{SHUTDOWN TRANSACTIONAL} \ 
+\begin{itemize}
+- Tiene el mismo efecto que emitir el comando RECOVER DATABASE e iniciar una instancia.\\
+\end{itemize} 
+
+\textbf{SHUTDOWN ABORT} \ 
+\begin{itemize}
+- Apagado brusco. Todas las conexiones se cortan de golpe, no se cierran los archivos ni se provoca un checkpoint. No se graba nada en disco. Simula un apagón repentino.
+\end{itemize}
+
+\textbf{SHUTDOWN INMEDIATE} \ 
+\begin{itemize}
+- No se aceptan nuevas conexiones y se cierran las actuales. Las transacciones se cortan mediante una instrucción ROLLBACK, cuando se cancele la última, se apaga la instancia de base de datos pero de forma coherente, es decir con un checkpoint y cerrando y grabando los archivos de datos correctamente (al igual que en los casos anteriores).
+\end{itemize}
+
+
+\subsection{En el script lab-02-01.sql, se establecen privilegios de sistema, enliste los privilegios de sistema (DDL) utilizados y describa cada uno de ellos.} 
+
+
+\textbf{GRANT-SYSTEM-PRIVILEGE} \ 
+\begin{itemize}
+- Este procedimiento realiza una concesión de un privilegio de sistema a un usuario o rol.
+\end{itemize}
+
+
+
+
 
 
 
 \end{document}
+
+
+
