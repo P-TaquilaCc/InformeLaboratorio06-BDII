@@ -1,4 +1,4 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Cuestionario}{1}
-\contentsline {subsection}{\numberline {1.1}\IeC {\textquestiondown }Qu\IeC {\'e} sucede al ejecutar los siguientes comandos?}{1}
-\contentsline {subsection}{\numberline {1.2}En el script lab-02-01.sql, se establecen privilegios de sistema, enliste los privilegios de sistema (DDL) utilizados y describa cada uno de ellos.}{2}
+\contentsline {section}{\numberline {1}Cuestionario}{1}% 
+\contentsline {subsection}{\numberline {1.1}\IeC {\textquestiondown }Qu\IeC {\'e} sucede al ejecutar los siguientes comandos?}{1}% 
+\contentsline {subsection}{\numberline {1.2}En el script lab-02-01.sql, se establecen privilegios de sistema, enliste los privilegios de sistema (DDL) utilizados y describa cada uno de ellos.}{2}% 
